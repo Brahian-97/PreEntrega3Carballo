@@ -1,0 +1,46 @@
+/*HIDRAULICA*/
+#grid_container_hid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#grid_container_section_hid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+}
+
+.display_hid{
+    display: flex;
+}
+
+.div_hid{
+    width: 10px;
+}
+
+.d_play_hid{
+    display: flex;
+    flex-direction: column;
+    align-self: self-start;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+    #grid_container_section_hid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 350px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    .display_hid{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+    }
+}
