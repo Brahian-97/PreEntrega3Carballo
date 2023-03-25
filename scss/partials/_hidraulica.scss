@@ -15,9 +15,7 @@
     display: flex;
 }
 
-.div_hid{
-    width: 10px;
-}
+
 
 .d_play_hid{
     display: flex;
@@ -25,7 +23,6 @@
     align-self: self-start;
     justify-content: space-evenly;
     width: 50%;
-    height: 50%;
     text-align: center;
 }
 
@@ -33,9 +30,9 @@
     #grid_container_section_hid{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        height: 350px;
         margin-top: 30px;
         margin-bottom: 20px;
+        height: 100vh;
     }
 
     .display_hid{
@@ -43,4 +40,5 @@
         justify-content: center;
         align-items: start;
     }
+
 }

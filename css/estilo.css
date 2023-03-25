@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +13,7 @@ body {
   background-color: #160B34;
 }
 
-h1, h2, h3, p, li {
+h1, h2, h3, h4, p, li {
   color: white;
 }
 
@@ -31,6 +32,7 @@ img {
   grid-template-columns: 1fr;
   /*grid-template-rows: ;*/
   grid-template-areas: "header" "main" "section" "footer";
+  height: 100vh;
 }
 
 #grid_container_header {
@@ -42,6 +44,7 @@ img {
 
 header {
   grid-area: header;
+  height: 20vh;
 }
 
 nav {
@@ -55,8 +58,11 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 50px;
   margin-left: 2px;
+}
+
+.logo_container img {
+  width: 150px;
 }
 
 h1 {
@@ -144,6 +150,7 @@ section {
 /*FOOTER*/
 footer {
   grid-area: footer;
+  height: 20vh;
 }
 
 #grid_footer {
@@ -180,7 +187,6 @@ iframe {
 
 .piso {
   background-color: #989387;
-  height: 5vh;
   text-align: right;
   grid-area: derechos;
 }
@@ -231,8 +237,6 @@ iframe {
   }
   /*NAV DESKTOP*/
   .logo_container {
-    width: 80px;
-    height: 30px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -337,7 +341,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   padding: 0px;
-  height: 500px;
+  height: 100vh;
 }
 
 .section_contacto {
@@ -377,13 +381,25 @@ iframe {
   height: 100%;
 }
 
+.mi-boton {
+  font-size: 2rem;
+  /* otros estilos aquí */
+}
+
+.mb-3 {
+  color: white;
+  font-size: 2.5rem;
+  width: 50vh;
+}
+
 @media screen and (min-width: 1200px) {
   /*CONTACTO*/
   #grid_section_contacto {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 20px;
-    height: 350px;
+    height: 70vh;
+    margin-top: 25px;
   }
   .section_contacto {
     width: 500px;
@@ -412,9 +428,13 @@ iframe {
   .d_play {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: start;
     align-items: center;
     height: 100%;
+  }
+  .mb-3 {
+    color: white;
+    font-size: 2.5rem;
   }
 }
 /*HIDRAULICA*/
@@ -433,17 +453,12 @@ iframe {
   display: flex;
 }
 
-.div_hid {
-  width: 10px;
-}
-
 .d_play_hid {
   display: flex;
   flex-direction: column;
   align-self: self-start;
   justify-content: space-evenly;
   width: 50%;
-  height: 50%;
   text-align: center;
 }
 
@@ -451,15 +466,18 @@ iframe {
   #grid_container_section_hid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height: 350px;
     margin-top: 30px;
     margin-bottom: 20px;
+    height: 100vh;
   }
   .display_hid {
     display: flex;
     justify-content: center;
     align-items: start;
   }
+}
+#grid_section_sobremi {
+  height: 100vh;
 }
 
 /*# sourceMappingURL=estilo.css.map */

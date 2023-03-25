@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr;
     padding: 0px;
-    height: 500px;
+    height: 100vh;
 }
 
 .section_contacto{
@@ -49,15 +49,28 @@
     height: 100%;
 }
 
+.mi-boton {
+    font-size: 2rem;
+    /* otros estilos aquí */
+  }
+
+.mb-3{
+    color: white;
+    font-size: 2.5rem;
+    width: 50vh;
+}
+
+  
 
 @media screen and (min-width: 1200px) {
         /*CONTACTO*/
 
         #grid_section_contacto{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
             padding: 20px;
-            height: 350px;
+            height: 70vh;
+            margin-top: 25px;
         }
     
         .section_contacto{
@@ -92,9 +105,16 @@
         .d_play{
             display: flex;
             flex-direction: column;
-            justify-content: space-evenly;
+            justify-content: start;
             align-items: center;
             height: 100%;
         }
+
+        .mb-3{
+            color: white;
+            font-size: 2.5rem;
+        }
+
+
     
     }

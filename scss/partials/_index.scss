@@ -12,7 +12,7 @@ body{
     background-color: #160B34;
 }
 
-h1,h2,h3,p,li{
+h1,h2,h3,h4,p,li{
     color: white;
 }
 
@@ -36,6 +36,7 @@ img{
         "main"
         "section"
         "footer";
+    height: 100vh;
 }
 
 #grid_container_header{
@@ -47,6 +48,7 @@ img{
 
 header{
     grid-area: header;
+    height: 20vh;
 }
 
 nav{
@@ -60,8 +62,11 @@ nav{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 50px;
     margin-left: 2px;
+}
+
+.logo_container img{
+    width: 150px;
 }
 
 h1{
@@ -152,6 +157,7 @@ section{
 
 footer{
     grid-area: footer;
+    height: 20vh;
 }
 
 #grid_footer{
@@ -191,7 +197,6 @@ iframe{
 
 .piso{
     background-color: #989387;
-    height: 5vh;
     text-align: right;
     grid-area: derechos;
 }
@@ -261,8 +266,6 @@ iframe{
 
     /*NAV DESKTOP*/
     .logo_container{
-        width: 80px;
-        height: 30px;
         display: flex;
         justify-content: flex-start;
         align-items: center;
@@ -290,6 +293,8 @@ iframe{
     h1{
         font-size: 4rem;
     }
+
+
     /*MAIN DESKTOP*/
     main{
         grid-area: main;
